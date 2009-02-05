@@ -43,13 +43,13 @@ class ArchitectsController < ApplicationController
     @architect = Architect.new(params[:architect])
 
     respond_to do |format|
-      if @Architect.save
+      if @architect.save
         flash[:notice] = 'Architect was successfully created.'
         format.html { redirect_to(@architect) }
         format.xml  { render :xml => @architect, :status => :created, :location => @architect }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @Architect.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @architect.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -60,13 +60,13 @@ class ArchitectsController < ApplicationController
     @architect = Architect.find(params[:id])
 
     respond_to do |format|
-      if @Architect.update_attributes(params[:architect])
+      if @architect.update_attributes(params[:architect])
         flash[:notice] = 'Architect was successfully updated.'
         format.html { redirect_to(@architect) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @Architect.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @architect.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -75,7 +75,7 @@ class ArchitectsController < ApplicationController
   # DELETE /architects/1.xml
   def destroy
     @architect = Architect.find(params[:id])
-    @Architect.destroy
+    @architect.destroy
 
     respond_to do |format|
       format.html { redirect_to(architects_url) }

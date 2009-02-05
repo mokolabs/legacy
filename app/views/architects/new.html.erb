@@ -3,9 +3,12 @@
 <% form_for(@architect) do |f| %>
   <%= f.error_messages %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
 
+  <%= f.label :last_name %>     
+  <%= f.text_field :last_name %>  
+  
   <%= f.label :description %>
   <%= f.text_area :description %>
   
