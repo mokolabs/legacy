@@ -8,9 +8,9 @@ namespace :db do
     desc 'Migrates legacy content'
     task :legacy => ["architects", "styles"]
     
-    desc 'Migrates styles'
-    task :styles => :environment do
-      migrate :styles
+    desc 'Migrates architects'
+    task :architects => :environment do
+      migrate :architects
     end
     
     desc 'Migrates theaters'
