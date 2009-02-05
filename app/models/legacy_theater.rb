@@ -4,7 +4,7 @@ class LegacyTheater < LegacyBase
   def map
     {
       :name => self.name_present,
-      :description => TextHelper.migrate(self.desc_long)
+      :description => self.desc_long
     }
   end
 
