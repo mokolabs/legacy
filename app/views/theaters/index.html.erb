@@ -1,0 +1,19 @@
+<h1>Listing theaters</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for theater in @theaters %>
+  <tr>
+    <td><%= theater.name %></td>
+    <td><%= link_to 'Show', theater %></td>
+    <td><%= link_to 'Edit', edit_theater_path(theater) %></td>
+    <td><%= link_to 'Destroy', theater, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New theater', new_theater_path %>

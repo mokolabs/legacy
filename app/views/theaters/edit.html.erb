@@ -1,0 +1,18 @@
+<h1>Editing theater</h1>
+
+<% form_for(@theater) do |f| %>
+  <%= f.error_messages %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+  
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @theater %> |
+<%= link_to 'Back', theaters_path %>
