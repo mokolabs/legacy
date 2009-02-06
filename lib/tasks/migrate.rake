@@ -1,5 +1,4 @@
 require 'migration_helper'
-require 'text_helper'
 
 namespace :db do
 
