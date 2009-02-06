@@ -6,8 +6,7 @@
 
 <% for architect in @architects %>
   <tr>
-    <td><%= architect.first_name %></td>
-    <td><%= architect.last_name %></td>
+    <td><%= architect.name %></td>
     <td><%= link_to 'Show', architect %></td>
     <td><%= link_to 'Edit', edit_architect_path(architect) %></td>
     <td><%= link_to 'Destroy', architect, :confirm => 'Are you sure?', :method => :delete %></td>
