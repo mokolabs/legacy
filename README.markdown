@@ -1,7 +1,7 @@
 Migrating Legacy Data sample app
 ================================
 
-This is a sample application that shows how to migrate legacy data into a Rails app, as demonstrated in Episode 15 of the SD Ruby Podcast.
+This is a sample application that shows how to migrate legacy data into a Rails app, as demonstrated in [Episode 15](http://sdruby.org/podcast/15) of the [SD Ruby Podcast](http://sdruby.org/podcast).
 
 July 2010 Update
 ----------------
